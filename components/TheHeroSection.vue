@@ -37,8 +37,10 @@ import HeaderBg from '~/assets/images/UIUX.png';
 .hero {
 	height: 788px;
 	background: #111;
+	margin-bottom: 152px;
 }
 .hero-section {
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 152px;
@@ -46,9 +48,10 @@ import HeaderBg from '~/assets/images/UIUX.png';
 	transform: translateX(-50%);
 }
 .hero-section--container {
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
+	align-items: center;
 	justify-content: space-between;
 }
 .hero-section--welcome {
@@ -150,7 +153,7 @@ import HeaderBg from '~/assets/images/UIUX.png';
 
 @media (min-width: 1460px) {
 	.hero-section--container {
-		padding: 107px 134px;
+		padding: 0px 134px;
 	}
 	.hero-section--header-secondary {
 		margin-right: 14px;

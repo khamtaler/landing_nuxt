@@ -63,6 +63,7 @@
 	text-decoration: none;
 	font-size: 19px;
 	line-height: 26px;
+	font-family: 'dana', sans-serif;
 }
 .button-menu--register {
 	background: rgba(255, 255, 255, 0.1);
