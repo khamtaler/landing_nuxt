@@ -1,26 +1,22 @@
 <template>
-	<div class="section">
-		<slot />
-	</div>
+	<section class="section">
+		<div class="section-wrapper">
+			<slot />
+		</div>
+	</section>
 </template>
 
 <script setup></script>
 
 <style lang="scss" scoped>
 .section {
+	max-width: 1500px;
+	width: 100%;
+	padding: 0px 20px;
+}
+.section-wrapper {
 	background: #fff;
 	border-radius: 30px;
-	padding: 20px;
-}
-
-@media (min-width: 1025px) {
-	.section {
-		padding: 50px;
-	}
-}
-@media (min-width: 1460px) {
-	.section {
-		padding: 134px;
-	}
+	max-width: 1460px;
 }
 </style>

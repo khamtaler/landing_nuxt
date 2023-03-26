@@ -1,11 +1,11 @@
 <template>
 	<ThePageHeader />
 	<main>
-		<TheHero />
+		<TheHeroSection />
 	</main>
 </template>
 
 <script setup>
 import ThePageHeader from './components/ThePageHeader.vue';
-import TheHero from './components/TheHero.vue';
+import TheHeroSection from './components/TheHeroSection.vue';
 </script>
