@@ -19,6 +19,7 @@
 	background: #fff;
 	border-radius: 30px;
 	max-width: 1460px;
-	height: 100%;
+	min-height: 100%;
+	padding: 20px;
 }
 </style>

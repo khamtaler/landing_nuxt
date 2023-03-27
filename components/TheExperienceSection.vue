@@ -22,6 +22,51 @@
 					{{ tab }}
 				</li>
 			</ul>
+			<div v-if="active === 0" class="experience-section--tab">
+				<figure class="experience-section--figure">
+					<img class="experience-section--img" src="../assets/images/productFactory.png" />
+				</figure>
+				<div class="experience-section--text-container">
+					<p class="experience-section--text">
+						This course has been attempted by zero people who are eager to learn product design,
+						especially user experience and user interface, so it is not a prerequisite, but due to
+						the limited capacity of the priority course with early enrolled people, others can
+						participate in future courses. . <br />
+						 Obviously, the ability to use tools like Adobe Photoshop and Adobe Illustrator as well
+						as Microsoft Word, Excel tools, and of course a lot of enthusiasm and energy,
+					</p>
+				</div>
+			</div>
+			<div v-if="active === 1" class="experience-section--tab">
+				<div class="experience-section--text-container">
+					<p class="experience-section--text">
+						This course has been attempted by zero people who are eager to learn product design,
+						especially user experience and user interface, so it is not a prerequisite, but due to
+						the limited capacity of the priority course with early enrolled people, others can
+						participate in future courses. . <br />
+						 Obviously, the ability to use tools like Adobe Photoshop and Adobe Illustrator as well
+						as Microsoft Word, Excel tools, and of course a lot of enthusiasm and energy,
+					</p>
+				</div>
+				<figure class="experience-section--figure">
+					<img class="experience-section--img" src="../assets/images/productFactory.png" />
+				</figure>
+			</div>
+			<div v-if="active === 2" class="experience-section--tab">
+				<figure class="experience-section--figure">
+					<img class="experience-section--img" src="../assets/images/productFactory.png" />
+				</figure>
+				<div class="experience-section--text-container">
+					<p class="experience-section--text">
+						This course has been attempted by zero people who are eager to learn product design,
+						especially user experience and user interface, so it is not a prerequisite, but due to
+						the limited capacity of the priority course with early enrolled people, others can
+						participate in future courses. . <br />
+						 Obviously, the ability to use tools like Adobe Photoshop and Adobe Illustrator as well
+						as Microsoft Word, Excel tools, and of course a lot of enthusiasm and energy,
+					</p>
+				</div>
+			</div>
 		</BaseSection>
 	</div>
 </template>
@@ -36,7 +81,7 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 
 <style lang="scss" scoped>
 .experience {
-	height: 1000px;
+	margin-top: 300px;
 }
 .experience-section--header {
 	display: block;
@@ -44,7 +89,7 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 	max-height: 145px;
 	height: 100%;
 	width: 100%;
-	margin: 0 auto;
+	margin: 55px auto 65px;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -63,8 +108,7 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 	justify-content: center;
 	max-width: 1016px;
 	width: 100%;
-	margin: 0 auto;
-
+	margin: 0px auto 81px;
 	border-radius: 16px;
 }
 .active.experience-section--list-item {
@@ -74,7 +118,7 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 .experience-section--list-item {
 	font-size: 18px;
 	line-height: 22px;
-	padding: 19px 4.15em;
+	padding: 18px 4.15em;
 	border-top: 1px solid #000000;
 	border-right: 1px solid #000000;
 	border-bottom: 1px solid #000000;
@@ -96,14 +140,43 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 .experience-section--list-item:hover {
 	cursor: pointer;
 }
-
+.experience-section--tab {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1174px;
+	margin: auto;
+	padding-bottom: 154px;
+}
+.experience-section--image {
+	height: 281px;
+	width: auto;
+}
+.experience-section--text-container {
+	width: 65%;
+}
+.experience-section--text {
+	font-size: 20px;
+	line-height: 48px;
+}
 @media (max-width: 768px) {
+	.experience-section--header {
+		background-size: contain;
+	}
+	.experience-section--header-main {
+		width: 100%;
+
+		padding: 2em 0px;
+		text-align: center;
+	}
 	.experience-section--list {
 		flex-direction: column;
 	}
 	.experience-section--list-item {
 		border-left: 1px solid #000;
 		border-bottom: none;
+		padding: 18px 1em;
 	}
 	.experience-section--list-item:first-child {
 		border-top-left-radius: 16px;
@@ -117,26 +190,41 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 		border-top-left-radius: 0px;
 		border-top-right-radius: 0px;
 	}
+
+	.experience-section--tab {
+		flex-direction: column;
+	}
+	.experience-section--text-container {
+		text-align: center;
+		margin-top: 50px;
+		width: 100%;
+	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 	.experience-section--list-item {
 		font-size: 16px;
 		line-height: 20px;
-		padding: 19px 1em;
+		padding: 18px 1em;
 	}
 }
 @media (min-width: 1025px) and (max-width: 1460px) {
 	.experience-section--list-item {
 		font-size: 16px;
 		line-height: 20px;
-		padding: 19px 3em;
+		padding: 18px 3em;
 	}
 }
-@media (min-width: 1460px) {
+@media (max-width: 1460px) {
+	.experience-section--img,
+	.experience-section--text {
+		padding: 0px 10px;
+	}
+}
+@media (min-width: 1461px) {
 	.experience-section--list-item {
 		font-size: 18px;
 		line-height: 22px;
-		padding: 19px 4.15em;
+		padding: 18px 4.15em;
 	}
 }
 </style>

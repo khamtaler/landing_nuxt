@@ -134,9 +134,6 @@ import HeaderBg from '~/assets/images/UIUX.png';
 	}
 }
 @media (max-width: 1024px) {
-	.hero-section--container {
-		padding: 20px;
-	}
 	.hero-section--welcome {
 		padding-right: 0px;
 	}
