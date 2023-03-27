@@ -12,8 +12,8 @@
 </template>
 
 <script setup>
-import TheMenu from './TheMenu.vue';
 import { ref } from 'vue';
+import TheMenu from './TheMenu.vue';
 import CloseIcon from './icons/CloseIcon.vue';
 import HamburgerIcon from './icons/HamburgerIcon.vue';
 let toggle = ref(false);
@@ -67,17 +67,6 @@ let toggle = ref(false);
 		margin: 0px;
 	}
 }
-@media (min-width: 1025px) {
-	.header-logo {
-		margin-right: 30px;
-	}
-}
-@media (min-width: 1460px) {
-	.header-logo {
-		margin-right: 76px;
-	}
-}
-
 @media (max-width: 1024px) {
 	.button-mobile--open {
 		display: block;
@@ -96,6 +85,16 @@ let toggle = ref(false);
 		.button-mobile--close {
 			display: block;
 		}
+	}
+}
+@media (min-width: 1025px) {
+	.header-logo {
+		margin-right: 30px;
+	}
+}
+@media (min-width: 1460px) {
+	.header-logo {
+		margin-right: 76px;
 	}
 }
 </style>

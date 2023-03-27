@@ -1,5 +1,5 @@
 <template>
-	<div class="hero">
+	<div id="Hero" class="hero" :style="{ marginBottom: offset + 'px' }">
 		<BaseSection class="hero-section">
 			<div class="hero-section--container">
 				<div class="hero-section--welcome">
@@ -31,19 +31,29 @@
 <script setup>
 import BaseSection from './BaseSection.vue';
 import HeaderBg from '~/assets/images/UIUX.png';
+
+const offset = ref(null);
+
+onMounted(() => {
+	let heroSection = document.querySelector('#Hero .section-wrapper');
+	offset.value = heroSection.offsetHeight - 788 + 159 + 123;
+	window.addEventListener('resize', () => {
+		offset.value = heroSection.offsetHeight - 788 + 159 + 123;
+		return offset;
+	});
+});
 </script>
 
 <style lang="scss" scoped>
 .hero {
 	height: 788px;
 	background: #111;
-	margin-bottom: 152px;
 }
 .hero-section {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	top: 152px;
+	top: 159px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -120,6 +130,7 @@ import HeaderBg from '~/assets/images/UIUX.png';
 	}
 	.hero-section--welcome {
 		margin: 30px auto 0px;
+		padding-right: 0px;
 	}
 	.hero-section--button {
 		display: block;
@@ -131,11 +142,6 @@ import HeaderBg from '~/assets/images/UIUX.png';
 	.hero-section--image {
 		display: block;
 		margin: 0px auto;
-	}
-}
-@media (max-width: 1024px) {
-	.hero-section--welcome {
-		padding-right: 0px;
 	}
 }
 @media (min-width: 1025px) {

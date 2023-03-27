@@ -81,7 +81,7 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 
 <style lang="scss" scoped>
 .experience {
-	margin-top: 300px;
+	margin-bottom: 100px;
 }
 .experience-section--header {
 	display: block;
@@ -108,7 +108,7 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 	justify-content: center;
 	max-width: 1016px;
 	width: 100%;
-	margin: 0px auto 81px;
+	margin: 0px auto 71px;
 	border-radius: 16px;
 }
 .active.experience-section--list-item {
@@ -146,8 +146,8 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 	justify-content: space-between;
 	width: 100%;
 	max-width: 1174px;
-	margin: auto;
-	padding-bottom: 154px;
+	margin: 0 auto;
+	padding-bottom: 109px;
 }
 .experience-section--image {
 	height: 281px;

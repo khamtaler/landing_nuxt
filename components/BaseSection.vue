@@ -16,10 +16,11 @@
 	margin: auto;
 }
 .section-wrapper {
+	display: grid;
 	background: #fff;
 	border-radius: 30px;
 	max-width: 1460px;
 	min-height: 100%;
-	padding: 20px;
+	padding: 0px 20px;
 }
 </style>
