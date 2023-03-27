@@ -24,7 +24,11 @@
 			</ul>
 			<div v-if="active === 0" class="experience-section--tab">
 				<figure class="experience-section--figure">
-					<img class="experience-section--img" src="../assets/images/productFactory.png" />
+					<img
+						class="experience-section--img"
+						src="../assets/images/productFactory.png"
+						alt="factory image"
+					/>
 				</figure>
 				<div class="experience-section--text-container">
 					<p class="experience-section--text">
@@ -49,12 +53,20 @@
 					</p>
 				</div>
 				<figure class="experience-section--figure">
-					<img class="experience-section--img" src="../assets/images/productFactory.png" />
+					<img
+						class="experience-section--img"
+						src="../assets/images/productFactory.png"
+						alt="factory image"
+					/>
 				</figure>
 			</div>
 			<div v-if="active === 2" class="experience-section--tab">
 				<figure class="experience-section--figure">
-					<img class="experience-section--img" src="../assets/images/productFactory.png" />
+					<img
+						class="experience-section--img"
+						src="../assets/images/productFactory.png"
+						alt="factory image"
+					/>
 				</figure>
 				<div class="experience-section--text-container">
 					<p class="experience-section--text">
