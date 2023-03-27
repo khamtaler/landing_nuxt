@@ -70,8 +70,13 @@ let send = ref(true);
 	line-height: 40px;
 }
 @media (max-width: 768px) {
+	.newsletter--desc,
 	.newsletter--confirmation-text {
-		line-height: 27px;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.newsletter--email-input {
+		font-size: 16px;
 	}
 }
 </style>

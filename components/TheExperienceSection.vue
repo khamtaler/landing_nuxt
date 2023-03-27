@@ -195,10 +195,17 @@ const tabList = ['After attending the course', 'During the period', 'Before atte
 	.experience-section--tab {
 		flex-direction: column;
 	}
+	.experience-section--img {
+		max-width: 100%;
+	}
 	.experience-section--text-container {
 		text-align: center;
 		margin-top: 50px;
 		width: 100%;
+	}
+	.experience-section--text {
+		font-size: 18px;
+		line-height: 25px;
 	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {

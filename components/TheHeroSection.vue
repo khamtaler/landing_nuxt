@@ -113,6 +113,8 @@ onMounted(() => {
 @media (max-width: 768px) {
 	.hero-section--text {
 		margin: 15px 0px;
+		font-size: 20px;
+		line-height: 31px;
 	}
 }
 @media (max-width: 1024px) {
@@ -124,10 +126,7 @@ onMounted(() => {
 		font-size: 25px;
 		line-height: 34px;
 	}
-	.hero-section--text {
-		font-size: 17px;
-		line-height: 40px;
-	}
+
 	.hero-section--welcome {
 		margin: 30px auto 0px;
 		padding-right: 0px;
@@ -141,9 +140,10 @@ onMounted(() => {
 	}
 	.hero-section--image {
 		display: block;
-		margin: 0px auto;
+		margin: 0px auto 30px;
 	}
 }
+
 @media (min-width: 1025px) {
 	.hero-section--container {
 		padding: 50px;
