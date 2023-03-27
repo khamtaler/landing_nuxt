@@ -2,26 +2,8 @@
 	<div class="menu">
 		<nav>
 			<ul class="menu--list">
-				<li class="menu-item">
-					<NuxtLink class="menu-item--link" to="/">Projects</NuxtLink>
-				</li>
-				<li class="menu-item">
-					<NuxtLink class="menu-item--link" to="/">Partners</NuxtLink>
-				</li>
-				<li class="menu-item">
-					<NuxtLink class="menu-item--link" to="/">FAQ</NuxtLink>
-				</li>
-				<li class="menu-item">
-					<NuxtLink class="menu-item--link" to="/">Masters</NuxtLink>
-				</li>
-				<li class="menu-item">
-					<NuxtLink class="menu-item--link" to="/">Classes</NuxtLink>
-				</li>
-				<li class="menu-item">
-					<NuxtLink class="menu-item--link" to="/">Course experience</NuxtLink>
-				</li>
-				<li class="menu-item">
-					<NuxtLink class="menu-item--link" to="/">About us</NuxtLink>
+				<li v-for="page in pages" class="menu-item">
+					<NuxtLink class="menu-item--link" to="/" @click="$emit('hide')">{{ page }}</NuxtLink>
 				</li>
 			</ul>
 		</nav>
@@ -29,7 +11,17 @@
 	</div>
 </template>
 
-<script setup></script>
+<script setup>
+const pages = [
+	'Projects',
+	'Partners',
+	'FAQ',
+	'Masters',
+	'Classes',
+	'Course experience',
+	'About us',
+];
+</script>
 <style lang="scss">
 .menu {
 	display: flex;

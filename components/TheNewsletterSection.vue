@@ -2,9 +2,6 @@
 	<section class="newsletter-section" :style="{ backgroundImage: `url(${requestHeadingsImg})` }">
 		<div class="newsletter-section--container">
 			<Newsletter class="newsletter-container--newsletter" />
-			<!-- <figure class="newsletter-section--figure">
-				<img class="newsletter-section--image" src="../assets/images/NewsletterBg.png" />
-			</figure> -->
 		</div>
 	</section>
 </template>
@@ -49,9 +46,4 @@ import requestHeadingsImg from '~/assets/images/NewsletterBg.png';
 		height: 100%;
 	}
 }
-// @media (max-width: 1480px) {
-// 	.newsletter-section--container {
-
-// 	}
-// }
 </style>

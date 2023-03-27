@@ -72,9 +72,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import BaseSection from './BaseSection.vue';
 import courseExperienceImg from '~/assets/images/Experience.png';
-import { ref } from 'vue';
+
 let active = ref(2);
 const tabList = ['After attending the course', 'During the period', 'Before attending the course'];
 </script>

@@ -1,13 +1,13 @@
 <template>
 	<header class="header" :class="toggle ? 'mobile' : ''">
-		<button class="button button-mobile--open" type="button" @click="() => (toggle = true)">
+		<button class="button button-mobile--open" type="button" @click="showMenu">
 			<HamburgerIcon class="button-mobile--open-icon" />
 		</button>
-		<button class="button button-mobile--close" type="button" @click="() => (toggle = false)">
+		<button class="button button-mobile--close" type="button" @click="hideMenu">
 			<CloseIcon class="button-mobile--close-icon" />
 		</button>
 		<NuxtLink class="header-logo" to="/"><img src="../assets/images/logo.png" /></NuxtLink>
-		<TheMenu />
+		<TheMenu @hide="hideMenu" />
 	</header>
 </template>
 
@@ -16,7 +16,16 @@ import { ref } from 'vue';
 import TheMenu from './TheMenu.vue';
 import CloseIcon from './icons/CloseIcon.vue';
 import HamburgerIcon from './icons/HamburgerIcon.vue';
+
 let toggle = ref(false);
+const showMenu = () => {
+	toggle.value = true;
+	document.body.classList.add('disable-scroll');
+};
+const hideMenu = () => {
+	toggle.value = false;
+	document.body.classList.remove('disable-scroll');
+};
 </script>
 
 <style lang="scss" scoped>

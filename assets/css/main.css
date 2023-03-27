@@ -13,3 +13,6 @@ body {
 .button:hover {
 	cursor: pointer;
 }
+.disable-scroll {
+	overflow: hidden;
+}
