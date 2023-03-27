@@ -43,6 +43,9 @@ const pages = [
 		align-items: center;
 		justify-content: center;
 	}
+	.menu--list {
+		gap: 20px;
+	}
 }
 
 .menu--list {
